@@ -1,0 +1,174 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Giorgio razzo</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Classic Style Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<!-- //js -->
+<!-- cart -->
+<script src="js/simpleCart.min.js"></script>
+<!-- cart -->
+<!-- for bootstrap working -->
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<!-- //for bootstrap working -->
+<!-- animation-effect -->
+<link href="css/animate.min.css" rel="stylesheet"> 
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+ </script>
+<script type="text/javascript">
+var sun = new Image();
+var moon = new Image();
+var earth = new Image();
+function init() {
+  sun.src = 'https://mdn.mozillademos.org/files/1456/Canvas_sun.png';
+  moon.src = 'https://mdn.mozillademos.org/files/1443/Canvas_moon.png';
+  earth.src = 'https://mdn.mozillademos.org/files/1429/Canvas_earth.png';
+  window.requestAnimationFrame(draw);
+}
+
+function draw() {
+  var ctx = document.getElementById('tutorial').getContext('2d');
+
+  ctx.globalCompositeOperation = 'destination-over';
+  ctx.clearRect(0, 0, 300, 300); // clear canvas
+
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+  ctx.strokeStyle = 'rgba(0, 153, 255, 0.4)';
+  ctx.save();
+  ctx.translate(150, 150);
+
+  // Earth
+  var time = new Date();
+  ctx.rotate(((2 * Math.PI) / 60) * time.getSeconds() + ((2 * Math.PI) / 60000) * time.getMilliseconds());
+  ctx.translate(105, 0);
+  ctx.fillRect(0, -12, 40, 24); // Shadow
+  ctx.drawImage(earth, -12, -12);
+
+  // Moon
+  ctx.save();
+  ctx.rotate(((2 * Math.PI) / 6) * time.getSeconds() + ((2 * Math.PI) / 6000) * time.getMilliseconds());
+  ctx.translate(0, 28.5);
+  ctx.drawImage(moon, -3.5, -3.5);
+  ctx.restore();
+
+  ctx.restore();
+  
+  ctx.beginPath();
+  ctx.arc(150, 150, 105, 0, Math.PI * 2, false); // Earth orbit
+  ctx.stroke();
+ 
+  ctx.drawImage(sun, 0, 0, 300, 300);
+
+  window.requestAnimationFrame(draw);
+}
+
+init();
+    
+</script>
+<link href='//fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+</head>
+	
+<body onload="draw()">
+<!-- header -->
+	<div class="header">
+			
+			<div class="container">
+			<div class="logo-nav">
+				
+					<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header nav_2">
+						<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						 <div class="navbar-brand logo-nav-left ">
+                                                     <div style="display:block;float:left">
+                                                     <img src="images/logo_razzo.svg"  class="animated wow pulse" data-wow-delay="1s" height="90">
+                                                     </div>
+                                                     <div class="animated wow pulse" data-wow-delay=".5s" style="padding-left: 50px;font-size:30px;color: rgb(180,0,180);display:block;float:left;height:90px;line-height: 60px;">
+                                                         GIORGIO RAZZO SAC 
+                                                         <div style="margin-left: 2px; font-size:16px;line-height: 0px;">Calidad y elegancia en prendas de vestir</div>
+                                                     </div>
+                                                     
+						</div>
+
+					</div> 
+					<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                                            <ul class="nav navbar-nav">
+							<li class="active"><a href="index.html" class="act">Inicio</a></li>	
+							<!-- Mega Menu -->
+							<li><a href="nosotros.html">Acerca de nosotros</a></li>
+							<li><a href="codes.html">Producción</a></li>
+							<li><a href="clientes.html">Clientes</a></li>
+							<li><a href="codes.html">Licitaciones</a></li>
+							<li><a href="contact.html">Contacto</a></li>
+                                                </ul>
+                                                  
+                                           
+						
+					</div>
+					</nav>
+				</div>
+				
+		</div>
+	</div>
+<!-- //header -->
+<canvas id="tutorial" width="150" height="150"></canvas>
+<div style="margin-bottom: 0px;background-color: #ccc; height:3px; width:100%;"></div>
+
+<!-- banner -->
+	
+	
+            
+                
+           
+	
+
+				
+	
+<div class="header-grid">
+					<div class="container">
+				<div class="header-left animated wow fadeInLeft" data-wow-delay=".5s">
+					<ul>
+					<li><i class="glyphicon glyphicon-bookmark"></i><a href="#">Dirección: Av Sta Ana 562 Urb. los Sauces-Ate </a></li>
+						<li><i class="glyphicon glyphicon-envelope" ></i><a href="mailto:info@example.com">administracion@giorgio.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" ></i>+051-01-3265247</li>
+						
+					</ul>
+				</div>
+				<div class="header-right animated wow fadeInRight" data-wow-delay=".5s">
+				<div class="header-right1 ">
+					
+				</div>
+				<div class="header-right2">
+						
+				</div>
+				<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			</div>
+</body>
+</html>
